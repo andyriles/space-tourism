@@ -1,8 +1,11 @@
-/* body {
-  background-image: url("../../../assets/home/background-home-mobile.jpg");
-  background-repeat: no-repeat;
-  background-size: 375px 667px;
-} */
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Barlow:wght@100&family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Bellefair&display=swap");
+
+$dark-color: #0b0d17;
+$light-color: #d0d6f9;
+$white-color: #ffffff;
+
 body {
   background: url("../../../assets/home/background-home-mobile.jpg") no-repeat
     center center fixed;
@@ -15,15 +18,46 @@ body {
 }
 
 .home-container {
-  text-align: center;
-  padding: 25px;
-  height: 100vh;
-  width: 50vh;
-  color: #ffffff;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  width: 327px;
+  margin-right: auto;
+  margin-top: 48px;
+  h3 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 2.7px;
+    color: $light-color;
+    margin-top: 0px;
+  }
+  h1 {
+    margin-top: 0px;
+    font-family: "Bellefair", sans-serif;
+    font-size: 80px;
+    line-height: 100px;
+    text-align: center;
+    letter-spacing: 2.7px;
+    color: $white-color;
+    font-style: normal;
+    font-weight: normal;
+  }
+  p {
+    margin-top: 0px;
+    font-family: "Barlow", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    color: $light-color;
+    text-align: center;
+  }
   .explore-button {
-    background-color: #ffffff;
-    color: #0b0d17;
+    background-color: $white-color;
+    color: $dark-color;
     border-radius: 50%;
     width: 150px;
     height: 150px;
@@ -34,5 +68,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: 81px;
+    font-family: "Bellefair", sans-serif;
   }
 }

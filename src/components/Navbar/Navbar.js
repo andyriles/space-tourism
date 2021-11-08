@@ -1,19 +1,32 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/shared/logo.svg";
 import Icon from "../../assets/shared/icon-hamburger.svg";
 import IconClose from "../../assets/shared/icon-close.svg";
 import "./navbar.scss";
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleClick = () => {
+    setIsOpen(true);
+  };
+
   return (
     <div className="navbar">
       <Link to="/">
         <img src={Logo} alt="logo" className="logo" />
       </Link>
 
-      <img src={Icon} alt="icon" className="icon" />
-      <nav>
+      <img src={Icon} alt="icon" className="icon" onClick={handleClick} />
+      <nav style={{ display: isOpen ? "block" : "none" }}>
+        <img
+          src={IconClose}
+          alt="icon"
+          className="icon-close"
+          onClick={() => setIsOpen(false)}
+        />
+
         <ul>
-          <img src={IconClose} alt="icon" className="icon-close" />
           <li>
             <Link to="/">
               <span>00</span> Home
