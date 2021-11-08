@@ -1,0 +1,21 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-content: center;
+  margin: 2.5rem 2.5rem 0 2.5rem;
+  .icon {
+    width: 34px;
+    height: 31px;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  .logo {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+nav {
+  display: none;
+}
