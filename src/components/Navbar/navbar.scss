@@ -1,10 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap");
+@import "../../scss-variables";
+
 .navbar {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   align-content: center;
-  margin: 2.5rem 2.5rem 0 2.5rem;
+  //margin: 2.5rem 2.5rem 0 2.5rem;
+  padding: 2em 2em 0 2em;
   .icon {
     width: 34px;
     height: 31px;
@@ -52,10 +54,16 @@
       padding: 0.5em;
       height: 19px;
       text-transform: uppercase;
-    }
-    span {
-      font-weight: bolder;
-      padding-right: 1em;
+      span {
+        font-weight: bolder;
+        padding-right: 1em;
+      }
+      &:hover {
+        font-weight: bolder;
+        border-bottom: 2px solid $white-color;
+        width: 85%;
+        opacity: 0.6;
+      }
     }
   }
 }

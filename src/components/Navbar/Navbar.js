@@ -7,8 +7,12 @@ import "./navbar.scss";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleClick = () => {
+  const handleOpen = () => {
     setIsOpen(true);
+  };
+
+  const handleClose = () => {
+    setIsOpen(false);
   };
 
   return (
@@ -17,32 +21,32 @@ const Navbar = () => {
         <img src={Logo} alt="logo" className="logo" />
       </Link>
 
-      <img src={Icon} alt="icon" className="icon" onClick={handleClick} />
+      <img src={Icon} alt="icon" className="icon" onClick={handleOpen} />
       <nav style={{ display: isOpen ? "block" : "none" }}>
         <img
           src={IconClose}
           alt="icon"
           className="icon-close"
-          onClick={() => setIsOpen(false)}
+          onClick={handleClose}
         />
 
         <ul>
-          <li>
+          <li onClick={handleClose}>
             <Link to="/">
               <span>00</span> Home
             </Link>
           </li>
-          <li>
+          <li onClick={handleClose}>
             <Link to="/Destination">
               <span>01</span> Destination
             </Link>
           </li>
-          <li>
+          <li onClick={handleClose}>
             <Link to="/Crew">
               <span>02</span> Crew
             </Link>
           </li>
-          <li>
+          <li onClick={handleClose}>
             <Link to="/Technology">
               <span>03</span> Technology
             </Link>

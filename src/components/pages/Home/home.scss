@@ -1,74 +1,77 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Barlow:wght@100&family=Bellefair&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Bellefair&display=swap");
-
-$dark-color: #0b0d17;
-$light-color: #d0d6f9;
-$white-color: #ffffff;
-
-body {
+@import "../../../scss-variables";
+.home {
   background: url("../../../assets/home/background-home-mobile.jpg") no-repeat
     center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  margin: 0;
-  padding: 0;
-}
-
-.home-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: auto;
-  width: 327px;
-  margin-right: auto;
-  margin-top: 48px;
-  h3 {
-    font-family: "Barlow Condensed", sans-serif;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    letter-spacing: 2.7px;
-    color: $light-color;
-    margin-top: 0px;
-  }
-  h1 {
-    margin-top: 0px;
-    font-family: "Bellefair", sans-serif;
-    font-size: 80px;
-    line-height: 100px;
-    text-align: center;
-    letter-spacing: 2.7px;
-    color: $white-color;
-    font-style: normal;
-    font-weight: normal;
-  }
-  p {
-    margin-top: 0px;
-    font-family: "Barlow", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 25px;
-    color: $light-color;
-    text-align: center;
-  }
-  .explore-button {
-    background-color: $white-color;
-    color: $dark-color;
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    font-size: 20px;
-    line-height: 23px;
-    letter-spacing: 1.25px;
+  height: 100vh;
+  overflow: hidden;
+  .home-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    text-align: center;
-    margin-top: 81px;
-    font-family: "Bellefair", sans-serif;
+    margin-left: auto;
+    width: 327px;
+    margin-right: auto;
+    margin-top: 48px;
+    h3 {
+      font-family: "Barlow Condensed", sans-serif;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      letter-spacing: 2.7px;
+      color: $white-color;
+      margin-top: 0px;
+    }
+    h1 {
+      margin-top: 0px;
+      font-family: "Bellefair", sans-serif;
+      font-size: 80px;
+      line-height: 100px;
+      text-align: center;
+      letter-spacing: 2.7px;
+      color: $white-color;
+      font-style: normal;
+      font-weight: normal;
+    }
+    p {
+      margin-top: 0px;
+      font-family: "Barlow", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 25px;
+      color: $light-color;
+      text-align: center;
+    }
+    a {
+      text-decoration: none;
+      color: $dark-color;
+      .explore-button {
+        background-color: $white-color;
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        font-size: 20px;
+        line-height: 23px;
+        letter-spacing: 1.25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 81px;
+        font-family: "Bellefair", sans-serif;
+        &:hover {
+          /*  background-clip: content-box;
+          border: 40px solid #808080; */
+          opacity: 0.5;
+          mix-blend-mode: normal;
+          background-color: #ffffff;
+          cursor: pointer;
+        }
+      }
+    }
   }
 }
