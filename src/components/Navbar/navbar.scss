@@ -24,7 +24,7 @@
     right: 0;
     background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(81.5485px);
-    width: 66%;
+    width: 75%;
     height: 100vh;
     padding: 1em;
     .icon-close {
@@ -46,17 +46,16 @@
       font-family: "Barlow Condensed", sans-serif;
       font-style: normal;
       font-weight: normal;
-      font-size: 26px;
+      font-size: 20px;
       line-height: 19px;
       letter-spacing: 2.7px;
       color: #ffffff;
       text-decoration: none;
       padding: 0.5em;
-      height: 19px;
       text-transform: uppercase;
       span {
         font-weight: bolder;
-        padding-right: 1em;
+        padding-right: 0.3em;
       }
       &:hover {
         font-weight: bolder;

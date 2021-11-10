@@ -7,13 +7,14 @@
   -o-background-size: cover;
   background-size: cover;
   height: 100vh;
-  overflow: hidden;
+  overflow: scroll;
+
   .home-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: auto;
-    width: 327px;
+    width: 90%;
     margin-right: auto;
     margin-top: 48px;
     h3 {
@@ -52,8 +53,8 @@
       .explore-button {
         background-color: $white-color;
         border-radius: 50%;
-        width: 150px;
-        height: 150px;
+        width: 130px;
+        height: 130px;
         font-size: 20px;
         line-height: 23px;
         letter-spacing: 1.25px;
@@ -61,7 +62,7 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        margin-top: 81px;
+        margin-top: 0.2em;
         font-family: "Bellefair", sans-serif;
         &:hover {
           /*  background-clip: content-box;
@@ -75,3 +76,9 @@
     }
   }
 }
+
+/* @media screen and (device-aspect-ratio: 40/71) {
+  .home {
+    height: auto;
+  }
+} */

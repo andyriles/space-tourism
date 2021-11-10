@@ -7,14 +7,15 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  overflow: hidden;
+  overflow: scroll;
+  height: 100vh;
 
   .destination-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: auto;
-    width: 365px;
+    width: 90%;
     margin-right: auto;
     margin-top: 20px;
     text-align: center;
@@ -42,10 +43,10 @@
       border-radius: 50%;
       width: 170px;
       height: 170px;
-      margin-left: 40px;
+      //margin-left: 10px;
     }
     .destination-options {
-      width: 380px;
+      width: 90%;
       height: 28px;
       ul {
         list-style-type: none;
@@ -62,7 +63,7 @@
           font-size: 20px;
           line-height: 20px;
           text-transform: uppercase;
-          margin: 10px 10px 20px 10px;
+          margin: 10px 10px 20px 0px;
           text-decoration: none;
           &:hover {
             border-bottom: 2px solid $white-color;
@@ -79,7 +80,7 @@
       font-weight: normal;
       font-size: 56px;
       line-height: 64px;
-      padding-left: 40px;
+      padding-left: 10px;
       margin-top: 20px;
       padding-top: 20px;
     }
@@ -91,7 +92,7 @@
       font-weight: normal;
       font-size: 15px;
       line-height: 25px;
-      padding-left: 40px;
+      padding-left: 10px;
       margin-top: -30px;
       text-align: center;
     }
@@ -99,7 +100,7 @@
       width: 100%;
       border: 1px solid #383b4b;
       margin-top: 40px;
-      margin-left: 15px;
+      //margin-left: 15px;
     }
     .distance-text,
     .time-text {
@@ -110,7 +111,7 @@
       font-size: 20px;
       line-height: 20px;
       text-transform: uppercase;
-      margin-left: 35px;
+      //margin-left: 35px;
     }
     .distance-value,
     .time-value {
@@ -121,7 +122,16 @@
       font-size: 30px;
       line-height: 35px;
       text-transform: uppercase;
-      margin-left: 35px;
+      //margin-left: 35px;
+    }
+    .time-value {
+      margin-top: 0;
     }
   }
 }
+
+/* @media screen and (device-aspect-ratio: 40/71) {
+  .destination {
+    height: auto;
+  }
+} */
