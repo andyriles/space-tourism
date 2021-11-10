@@ -1,0 +1,100 @@
+@import "../../../scss-variables";
+
+.crew {
+  background: url("../../../assets/crew/background-crew-mobile.jpg") no-repeat
+    center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: scroll;
+  height: 100vh;
+
+  .crew-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    width: 90%;
+    margin-right: auto;
+    margin-top: 20px;
+    text-align: center;
+    .heading {
+      font-family: "Barlow Condensed", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 2.7px;
+      text-transform: uppercase;
+      color: $white-color;
+      span {
+        margin-right: 20px;
+      }
+    }
+    .slide-container {
+      width: 80%;
+      margin-top: 3em;
+      .slick-slider {
+        .slick-arrow {
+          display: none !important;
+        }
+        &:hover {
+          .slick-arrow {
+            display: block !important;
+          }
+        }
+      }
+      .slick-dots li button:before {
+        color: $white-color;
+        width: 30px;
+        height: 30px;
+        font-size: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      img {
+        // width: 120px;
+        height: 222px;
+        width: 153px;
+        margin: auto;
+      }
+    }
+
+    .info-container {
+      margin-top: 4em;
+      .role {
+        font-family: "Bellefair", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 18px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $white-color;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+      }
+      .name {
+        font-family: "Bellefair", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $white-color;
+      }
+
+      .bio {
+        font-family: "Barlow", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        color: $light-color;
+      }
+    }
+  }
+}
