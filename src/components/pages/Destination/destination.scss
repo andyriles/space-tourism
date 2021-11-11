@@ -28,15 +28,18 @@
       letter-spacing: 2.7px;
       text-transform: uppercase;
       color: $white-color;
-      margin-left: 35px;
+      //margin-left: 35px;
       span {
         margin-right: 20px;
+        mix-blend-mode: normal;
+        opacity: 0.25;
+        font-weight: bold;
       }
     }
     img {
       width: 120px;
       height: 120px;
-      margin-left: 40px;
+      //margin-left: 40px;
     }
     /*   .destination-pic {
       background-color: $white-color;

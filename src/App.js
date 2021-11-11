@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./components/pages/Home/Home";
 import Destination from "./components/pages/Destination/Destination";
 import Crew from "./components/pages/Crew/Crew";
-import Technology from "./components/pages/Technology";
+import Technology from "./components/pages/Technology/Technology";
 import "./App.scss";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
