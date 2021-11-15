@@ -9,30 +9,36 @@
   background-size: cover;
   overflow: scroll;
   height: 100vh;
-
+  .heading {
+    font-family: "Barlow Condensed", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    color: $white-color;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    text-align: center;
+    span {
+      margin-right: 20px;
+      mix-blend-mode: normal;
+      opacity: 0.25;
+      font-weight: bold;
+    }
+  }
   .technology-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
     text-align: center;
-    .heading {
-      font-family: "Barlow Condensed", sans-serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 19px;
-      letter-spacing: 2.7px;
-      text-transform: uppercase;
-      color: $white-color;
-      margin-right: 20px;
-      span {
-        margin-right: 20px;
-        mix-blend-mode: normal;
-        opacity: 0.25;
-        font-weight: bold;
-      }
-    }
+
     .tech-image {
       img {
         width: 100%;
@@ -103,6 +109,47 @@
         line-height: 25px;
         text-align: center;
         color: $light-color;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 641px) {
+  .technology {
+    background: url("../../../assets/technology/background-technology-tablet.jpg")
+      no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    .heading {
+      margin-top: 2em;
+      justify-content: flex-start;
+      margin-left: 2.5em;
+    }
+    .technology-container {
+      .tech-image {
+        img {
+          width: 48em;
+          height: auto;
+        }
+      }
+      .info-container {
+        width: 28.6em;
+        .terminology {
+          font-size: 16px;
+          line-height: 19px;
+          letter-spacing: 2.7px;
+        }
+        .name {
+          font-size: 40px;
+          line-height: 46px;
+        }
+        .description {
+          font-size: 16px;
+          line-height: 28px;
+        }
       }
     }
   }

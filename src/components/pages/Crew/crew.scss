@@ -9,7 +9,28 @@
   background-size: cover;
   overflow: scroll;
   height: 100vh;
-
+  .heading {
+    font-family: "Barlow Condensed", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    color: $white-color;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    text-align: center;
+    span {
+      margin-right: 20px;
+      mix-blend-mode: normal;
+      opacity: 0.25;
+      font-weight: bold;
+    }
+  }
   .crew-container {
     display: flex;
     flex-direction: column;
@@ -19,22 +40,6 @@
     margin-right: auto;
     margin-top: 20px;
     text-align: center;
-    .heading {
-      font-family: "Barlow Condensed", sans-serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 19px;
-      letter-spacing: 2.7px;
-      text-transform: uppercase;
-      color: $white-color;
-      span {
-        margin-right: 20px;
-        mix-blend-mode: normal;
-        opacity: 0.25;
-        font-weight: bold;
-      }
-    }
     .slide-container {
       width: 80%;
       margin-top: 3em;
@@ -42,12 +47,12 @@
         .slick-arrow {
           display: none !important;
         }
-        &:hover {
-          .slick-arrow {
-            display: block !important;
-          }
-        }
       }
+      /*  &:hover {
+        .slick-arrow {
+          display: block !important;
+        }
+      } */
       .slick-dots li button:before {
         color: $white-color;
         width: 30px;
@@ -97,6 +102,53 @@
         line-height: 25px;
         text-align: center;
         color: $light-color;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 641px) {
+  .crew {
+    background: url("../../../assets/crew/background-crew-tablet.jpg") no-repeat
+      center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    .heading {
+      margin-top: 2em;
+      justify-content: flex-start;
+      margin-left: 2.5em;
+    }
+    .crew-container {
+      width: 28.6em;
+      margin-top: -5em;
+      flex-direction: column-reverse;
+      .slide-container {
+        width: 100%;
+        .slick-dots {
+          top: -70px;
+        }
+        img {
+          width: 28.6em;
+          height: 35.75em;
+          margin: auto;
+        }
+      }
+
+      .info-container {
+        .role {
+          font-size: 1.5em;
+          line-height: 1.8em;
+        }
+        .name {
+          font-size: 40px;
+          line-height: 46px;
+        }
+        .bio {
+          font-size: 16px;
+          line-height: 28px;
+        }
       }
     }
   }

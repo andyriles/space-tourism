@@ -19,17 +19,17 @@
     margin-top: 48px;
     h3 {
       font-family: "Barlow Condensed", sans-serif;
-      font-size: 16px;
-      line-height: 19px;
+      font-size: 1em;
+      line-height: 1.2em;
       text-align: center;
       letter-spacing: 2.7px;
       color: $light-color;
-      margin-top: 0px;
+      //margin-top: 0px;
     }
     h1 {
       margin-top: 0px;
       font-family: "Bellefair", sans-serif;
-      font-size: 80px;
+      font-size: 5em;
       line-height: 100px;
       text-align: center;
       letter-spacing: 2.7px;
@@ -53,8 +53,8 @@
       .explore-button {
         background-color: $white-color;
         border-radius: 50%;
-        width: 130px;
-        height: 130px;
+        width: 8.2em;
+        height: 8.2em;
         font-size: 20px;
         line-height: 23px;
         letter-spacing: 1.25px;
@@ -62,7 +62,7 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        margin-top: 0.2em;
+        margin-top: 0.7em;
         font-family: "Bellefair", sans-serif;
         &:hover {
           /*  background-clip: content-box;
@@ -77,8 +77,27 @@
   }
 }
 
-/* @media screen and (device-aspect-ratio: 40/71) {
+@media only screen and (min-width: 641px) {
   .home {
-    height: auto;
+    background: url("../../../assets/home/background-home-tablet.jpg") no-repeat
+      center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    overflow: scroll;
+    .home-container {
+      h3 {
+        margin-top: 3em;
+      }
+      width: 28.2em;
+      a {
+        .explore-button {
+          margin-top: 4.5em;
+          margin-bottom: 20px;
+        }
+      }
+    }
   }
-} */
+}

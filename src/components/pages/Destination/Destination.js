@@ -47,10 +47,10 @@ const Destination = () => {
   return (
     <div className="destination">
       <Navbar />
+      <p className="heading">
+        <span>01</span>Pick your destination
+      </p>
       <div className="destination-container">
-        <p className="heading">
-          <span>01</span>Pick your destination
-        </p>
         {/* <img src="" alt="" /> */}
         {destination?.map((dest, i) => {
           return <img key={i} src={dest?.images.png} alt="moon" />;
@@ -125,10 +125,16 @@ const Destination = () => {
                 <h1>{dest?.name}</h1>
                 <p className="description">{dest?.description}</p>
                 <hr />
-                <p className="distance-text">Avg. distance</p>
-                <h2 className="distance-value">{dest?.distance}</h2>
-                <p className="time-text">Est. Travel Time</p>
-                <h2 className="time-value">{dest?.travel}</h2>
+                <div className="info-container">
+                  <div className="distance-box">
+                    <p className="distance-text">Avg. distance</p>
+                    <h2 className="distance-value">{dest?.distance}</h2>
+                  </div>
+                  <div className="time-box">
+                    <p className="time-text">Est. Travel Time</p>
+                    <h2 className="time-value">{dest?.travel}</h2>
+                  </div>
+                </div>
               </React.Fragment>
             );
           })}

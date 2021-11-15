@@ -35,33 +35,82 @@
       margin-right: 2em;
       cursor: pointer;
     }
-  }
-  ul {
-    margin-top: 10em;
-    list-style-type: none;
-  }
-  li {
-    a {
-      display: block;
-      font-family: "Barlow Condensed", sans-serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 20px;
-      line-height: 19px;
-      letter-spacing: 2.7px;
-      color: #ffffff;
-      text-decoration: none;
-      padding: 0.5em;
-      text-transform: uppercase;
-      span {
-        font-weight: bolder;
-        padding-right: 0.3em;
+    ul {
+      margin-top: 10em;
+      list-style-type: none;
+      li {
+        a {
+          display: block;
+          font-family: "Barlow Condensed", sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 19px;
+          letter-spacing: 2.7px;
+          color: #ffffff;
+          text-decoration: none;
+          padding: 0.5em;
+          text-transform: uppercase;
+          span {
+            font-weight: bolder;
+            padding-right: 0.3em;
+          }
+          &:hover {
+            font-weight: bolder;
+            border-bottom: 2px solid $white-color;
+            width: 85%;
+            opacity: 0.6;
+          }
+        }
       }
-      &:hover {
-        font-weight: bolder;
-        border-bottom: 2px solid $white-color;
-        width: 85%;
-        opacity: 0.6;
+    }
+  }
+}
+
+@media only screen and (min-width: 641px) {
+  .icon,
+  .icon-close {
+    display: none;
+  }
+  .logo {
+    padding: 2em 2em 0 2em;
+  }
+  .navbar {
+    /*  display: flex;
+    flex-direction: row; */
+    //justify-content: unset;
+    padding: 0;
+    nav {
+      display: flex !important;
+      position: relative;
+      justify-content: flex-end;
+      align-items: center;
+      background: none;
+      backdrop-filter: none;
+      flex-direction: row;
+      background: rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(81.5485px);
+      height: 6em;
+      width: 31em;
+
+      ul {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        padding: auto;
+        justify-content: center;
+        li {
+          a {
+            display: inline-block;
+            font-family: "Barlow Condensed", sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 2.3625px;
+            padding: 0.7em;
+          }
+        }
       }
     }
   }

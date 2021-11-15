@@ -46,10 +46,10 @@ const Crew = () => {
   return (
     <div className="crew">
       <Navbar />
+      <p className="heading">
+        <span>02</span>Meet your crew
+      </p>
       <div className="crew-container">
-        <p className="heading">
-          <span>02</span>Meet your crew
-        </p>
         <div className="slide-container">
           <Slider {...settings}>
             {crew?.map((member, i) => {

@@ -42,10 +42,10 @@ const Technology = () => {
   return (
     <div className="technology">
       <Navbar />
+      <p className="heading">
+        <span>03</span>Space launch 101
+      </p>
       <div className="technology-container">
-        <p className="heading">
-          <span>03</span>Space launch 101
-        </p>
         <div className="tech-image">
           <img src={technology[0]?.images.landscape} alt="space" />
         </div>
