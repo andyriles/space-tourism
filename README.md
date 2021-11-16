@@ -81,8 +81,8 @@ In the future, I would like to make use of css grid to design websites. I would 
 
 ### Useful resources
 
-- [Example resource 1](https://www.reactjs.org) - This helped me with the useEffect hook. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://css-tricks.com/) - This is an amazing article which helped me finally understand css flexbox. I'd recommend it to anyone still learning this concept.
+- [UseEffect hook](https://reactjs.org/docs/hooks-effect.html) - This helped me with the useEffect hook. I really liked this pattern and will use it going forward.
+- [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - This is an amazing article which helped me finally understand css flexbox. I'd recommend it to anyone still learning this concept.
 
 ## Author
 
