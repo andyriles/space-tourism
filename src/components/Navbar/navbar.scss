@@ -1,5 +1,7 @@
 @import "../../scss-variables";
-
+.nav-line {
+  display: none;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -67,7 +69,7 @@
   }
 }
 
-@media only screen and (min-width: 641px) {
+@media only screen and (min-width: 652px) {
   .icon,
   .icon-close {
     display: none;
@@ -106,9 +108,46 @@
             font-style: normal;
             font-weight: normal;
             font-size: 14px;
-            line-height: 17px;
+            line-height: 6em;
             letter-spacing: 2.3625px;
             padding: 0.7em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1240px) {
+  .nav-line {
+    display: block;
+    width: 32%;
+    height: 1px;
+    background: $white-color;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    margin-top: -4em;
+    position: absolute;
+    left: 10em;
+    z-index: 999;
+  }
+  .navbar {
+    nav {
+      justify-content: space-evenly;
+      width: 55%;
+      height: 96px;
+      background: rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(81.5485px);
+      ul {
+        padding: 0;
+        margin: 0;
+        li {
+          text-align: center;
+          a {
+            font-size: 16px;
+            line-height: 96px;
+            letter-spacing: 2.7px;
+            margin: auto 1.5em auto 1.5em;
           }
         }
       }

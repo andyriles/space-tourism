@@ -7,7 +7,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  overflow: scroll;
+  overflow-y: scroll;
   height: 100vh;
 
   .heading {
@@ -49,110 +49,113 @@
       height: 120px;
       //margin-left: 40px;
     }
-    .destination-options {
-      width: 90%;
-      height: 28px;
-      ul {
-        list-style-type: none;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-      }
-      li {
-        a {
-          cursor: pointer;
-          font-family: "Barlow Condensed", sans-serif;
-          font-style: normal;
-          font-weight: normal;
-          font-size: 20px;
-          line-height: 20px;
-          text-transform: uppercase;
-          margin: 10px 10px 20px 0px;
-          text-decoration: none;
-          &:hover {
-            border-bottom: 2px solid $white-color;
-            opacity: 0.6;
+
+    .info {
+      .destination-options {
+        width: 90%;
+        height: 28px;
+        ul {
+          list-style-type: none;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+        }
+        li {
+          a {
+            cursor: pointer;
+            font-family: "Barlow Condensed", sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 20px;
+            text-transform: uppercase;
+            margin: 10px 10px 20px 0px;
+            text-decoration: none;
+            &:hover {
+              border-bottom: 2px solid $white-color;
+              opacity: 0.6;
+            }
           }
         }
       }
-    }
-    h1 {
-      color: $white-color;
-      font-family: "Bellefair", sans-serif;
-      text-transform: uppercase;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 56px;
-      line-height: 64px;
-      padding-left: 10px;
-      margin-top: 20px;
-      padding-top: 20px;
-    }
-
-    .description {
-      color: $light-color;
-      font-family: "Barlow", sans-serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 15px;
-      line-height: 25px;
-      padding-left: 10px;
-      margin-top: -30px;
-      text-align: center;
-    }
-    hr {
-      width: 100%;
-      border: 1px solid #383b4b;
-      margin-top: 40px;
-      //margin-left: 15px;
-    }
-    .info-container {
-      .distance-box {
-        .distance-text {
-          color: $light-color;
-          font-family: "Barlow Condensed", sans-serif;
-          font-style: normal;
-          font-weight: normal;
-          font-size: 20px;
-          line-height: 20px;
-          text-transform: uppercase;
-          //margin-left: 35px;
-        }
-        .distance-value {
-          color: $white-color;
-          font-family: "Bellefair", sans-serif;
-          font-style: normal;
-          font-weight: normal;
-          font-size: 30px;
-          line-height: 35px;
-          text-transform: uppercase;
-          //margin-left: 35px;
-        }
+      h1 {
+        color: $white-color;
+        font-family: "Bellefair", sans-serif;
+        text-transform: uppercase;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 56px;
+        line-height: 64px;
+        padding-left: 10px;
+        margin-top: 20px;
+        padding-top: 20px;
       }
-      .time-box {
-        .time-text {
-          color: $light-color;
-          font-family: "Barlow Condensed", sans-serif;
-          font-style: normal;
-          font-weight: normal;
-          font-size: 20px;
-          line-height: 20px;
-          text-transform: uppercase;
-          //margin-left: 35px;
+
+      .description {
+        color: $light-color;
+        font-family: "Barlow", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 25px;
+        padding-left: 10px;
+        margin-top: -30px;
+        text-align: center;
+      }
+      hr {
+        width: 100%;
+        border: 1px solid #383b4b;
+        margin-top: 40px;
+        //margin-left: 15px;
+      }
+      .info-container {
+        .distance-box {
+          .distance-text {
+            color: $light-color;
+            font-family: "Barlow Condensed", sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 20px;
+            text-transform: uppercase;
+            //margin-left: 35px;
+          }
+          .distance-value {
+            color: $white-color;
+            font-family: "Bellefair", sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 35px;
+            text-transform: uppercase;
+            //margin-left: 35px;
+          }
         }
-        .time-value {
-          color: $white-color;
-          font-family: "Bellefair", sans-serif;
-          font-style: normal;
-          font-weight: normal;
-          font-size: 30px;
-          line-height: 35px;
-          text-transform: uppercase;
-          //margin-left: 35px;
+        .time-box {
+          .time-text {
+            color: $light-color;
+            font-family: "Barlow Condensed", sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 20px;
+            text-transform: uppercase;
+            //margin-left: 35px;
+          }
+          .time-value {
+            color: $white-color;
+            font-family: "Bellefair", sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 35px;
+            text-transform: uppercase;
+            //margin-left: 35px;
+          }
+          /* .time-value {
+            margin-top: 0;
+          } */
         }
-        /* .time-value {
-          margin-top: 0;
-        } */
       }
     }
   }
@@ -166,7 +169,7 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    overflow: scroll;
+    overflow-y: scroll;
     height: 100vh;
     .heading {
       margin-top: 5em;
@@ -175,11 +178,55 @@
     }
     .destination-container {
       width: 28.2em;
+      .info {
+        .info-container {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+        }
+      }
+    }
+  }
+}
 
-      .info-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
+@media only screen and (min-width: 961px) {
+  .destination {
+    background: url("../../../assets/destination/background-destination-desktop.jpg")
+      no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: visible;
+    height: 100vh;
+    overflow-y: scroll;
+    .heading {
+      font-size: 28px;
+      line-height: 34px;
+      letter-spacing: 4.725px;
+      margin-top: 3em;
+      margin-left: 5em;
+    }
+    .destination-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 75%;
+      img {
+        height: 27.8em;
+        width: 27.8em;
+        padding-top: 5em;
+      }
+      .info {
+        width: 27.8em;
+        height: auto;
+        h1 {
+          font-size: 6.25em;
+          //line-height: 7.2em;
+        }
+        .description {
+          font-size: 1.1em;
+        }
       }
     }
   }

@@ -47,49 +47,59 @@ const Technology = () => {
       </p>
       <div className="technology-container">
         <div className="tech-image">
-          <img src={technology[0]?.images.landscape} alt="space" />
+          {/* <img src={technology[0]?.images.landscape} alt="space" /> */}
+          <picture>
+            <source
+              media="(min-width: 961px)"
+              srcSet={technology[0]?.images.portrait}
+            />
+            <img src={technology[0]?.images.landscape} alt="space" />
+          </picture>
         </div>
-        <div className="circles">
-          <div
-            className="circle"
-            onClick={getNumber}
-            style={{
-              color: current === "1" ? "#0b0d17" : "#FFFFFF",
-              backgroundColor: current === "1" ? "#FFFFFF" : null,
-            }}
-          >
-            1
-          </div>
-          <div
-            className="circle"
-            onClick={getNumber}
-            style={{
-              color: current === "2" ? "#0b0d17" : "#FFFFFF",
-              backgroundColor: current === "2" ? "#FFFFFF" : null,
-            }}
-          >
-            2
-          </div>
-          <div
-            className="circle"
-            onClick={getNumber}
-            style={{
-              color: current === "3" ? "#0b0d17" : "#FFFFFF",
-              backgroundColor: current === "3" ? "#FFFFFF" : null,
-            }}
-          >
-            3
-          </div>
-        </div>
-        {technology?.map((tech, i) => {
-          return (
-            <div className="info-container" key={i}>
-              <p className="terminology">The terminology...</p>
-              <h2 className="name">{tech?.name}</h2>
-              <p className="description">{tech?.description}</p>
+        <div className="technology-content">
+          <div className="circles">
+            <div
+              className="circle"
+              onClick={getNumber}
+              style={{
+                color: current === "1" ? "#0b0d17" : "#FFFFFF",
+                backgroundColor: current === "1" ? "#FFFFFF" : null,
+              }}
+            >
+              1
             </div>
-          );
-        })}
+            <div
+              className="circle"
+              onClick={getNumber}
+              style={{
+                color: current === "2" ? "#0b0d17" : "#FFFFFF",
+                backgroundColor: current === "2" ? "#FFFFFF" : null,
+              }}
+            >
+              2
+            </div>
+            <div
+              className="circle"
+              onClick={getNumber}
+              style={{
+                color: current === "3" ? "#0b0d17" : "#FFFFFF",
+                backgroundColor: current === "3" ? "#FFFFFF" : null,
+              }}
+            >
+              3
+            </div>
+          </div>
+
+          {technology?.map((tech, i) => {
+            return (
+              <div className="info-container" key={i}>
+                <p className="terminology">The terminology...</p>
+                <h2 className="name">{tech?.name}</h2>
+                <p className="description">{tech?.description}</p>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );

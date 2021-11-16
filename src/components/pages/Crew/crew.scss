@@ -7,7 +7,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  overflow: scroll;
+  overflow-y: scroll;
   height: 100vh;
   .heading {
     font-family: "Barlow Condensed", sans-serif;
@@ -151,5 +151,66 @@
         }
       }
     }
+  }
+}
+
+@media only screen and (min-width: 961px) {
+  .crew {
+    background: url("../../../assets/crew/background-crew-desktop.jpg")
+      no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: visible;
+    height: 100vh;
+    overflow-y: scroll;
+    .heading {
+      font-size: 28px;
+      line-height: 34px;
+      letter-spacing: 4.725px;
+      margin-left: 10%;
+    }
+    .crew-container {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-around;
+      width: 80%;
+      .slide-container {
+        width: 56%;
+        //padding-right: -15em;
+        .slick-dots {
+          left: -119%;
+          top: 90%;
+          // margin-right: 50px;
+        }
+      }
+      .info-container {
+        // margin-right: 5em;
+        .role {
+          font-size: 32px;
+          line-height: 37px;
+          text-align: left;
+        }
+        .name {
+          font-size: 56px;
+          line-height: 64px;
+          text-align: left;
+        }
+        .bio {
+          font-size: 18px;
+          line-height: 32px;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .crew .crew-container .slide-container .slick-dots {
+    left: -121%;
+    top: 90%;
+    // margin-right: 50px;
   }
 }

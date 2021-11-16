@@ -7,7 +7,7 @@
   -o-background-size: cover;
   background-size: cover;
   height: 100vh;
-  overflow: scroll;
+  overflow-y: scroll;
 
   .home-container {
     display: flex;
@@ -86,7 +86,7 @@
     -o-background-size: cover;
     background-size: cover;
     height: 100vh;
-    overflow: scroll;
+    overflow-y: scroll;
     .home-container {
       h3 {
         margin-top: 3em;
@@ -96,6 +96,58 @@
         .explore-button {
           margin-top: 4.5em;
           margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 961px) {
+  .home {
+    background: url("../../../assets/home/background-home-desktop.jpg")
+      no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: visible;
+    height: 100vh;
+    overflow-y: scroll;
+    .home-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 80%;
+      .intro {
+        //margin-left: 8em;
+        width: 28.1em;
+        h3 {
+          font-size: 28px;
+          line-height: 34px;
+          letter-spacing: 4.725px;
+        }
+        h1 {
+          font-size: 150px;
+          line-height: 172px;
+        }
+        p {
+          margin-top: -1em;
+          font-size: 18px;
+          line-height: 32px;
+        }
+      }
+
+      .explore-buttons {
+        a {
+          .explore-button {
+            /*  width: 17.1em;
+            height: 17.1em; */
+            font-size: 32px;
+            &:hover {
+              opacity: 1;
+              box-shadow: 0 0 0 2em rgba(255, 255, 255, 0.1);
+            }
+          }
         }
       }
     }
