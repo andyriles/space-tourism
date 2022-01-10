@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](http://https://astro-tour.netlify.app/)
+- Live Site URL: [Astro-tour](https://astro-tour.netlify.app/)
 
 ## My process
 
